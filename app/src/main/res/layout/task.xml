@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RadioGroup
+            android:id="@+id/radgrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="212dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="159dp"
+                android:buttonTint="@android:color/holo_green_dark"
+                android:paddingStart="8dp"
+
+
+                tools:text="@string/task" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="Low"
+                android:textSize="20dp"
+                android:textStyle="italic"
+               />
+
+
+            <RadioButton
+                android:id="@+id/radiobutton_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="Mid"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                />
+
+            <RadioButton
+                android:id="@+id/radiobutton_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="High"
+                android:textSize="20dp"
+                android:textStyle="italic"
+               />
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
